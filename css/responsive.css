@@ -1,0 +1,581 @@
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 992px) {
+
+    .nav-links {
+
+        gap: 20px;
+
+    }
+
+    .nav-btn {
+
+        display: none;
+
+    }
+
+    .hero h1 {
+
+        font-size: 64px;
+
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+
+        padding: 17px 0;
+
+    }
+
+    .nav-links {
+
+        position: absolute;
+
+        top: 100%;
+
+        left: 0;
+
+        width: 100%;
+
+        padding: 25px;
+
+        background: var(--espresso);
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+        display: none;
+
+    }
+
+    .nav-links.active {
+
+        display: flex;
+
+    }
+
+    .menu-toggle {
+
+        display: block;
+
+    }
+
+    .hero {
+
+        min-height: 100svh;
+
+        background-position: 60% center;
+
+    }
+
+    .hero-overlay {
+
+        background:
+
+            linear-gradient(
+                90deg,
+                rgba(24,14,9,0.92),
+                rgba(24,14,9,0.62)
+            );
+
+    }
+
+    .hero-content {
+
+        padding-top: 90px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 52px;
+
+        letter-spacing: -1px;
+
+    }
+
+    .hero-content > p {
+
+        font-size: 15px;
+
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        max-width: 300px;
+
+    }
+
+    .hero-features {
+
+        gap: 15px;
+
+        flex-direction: column;
+
+    }
+
+    .scroll-down {
+
+        display: none;
+
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .logo {
+
+        font-size: 21px;
+
+    }
+
+    .logo-icon {
+
+        width: 35px;
+
+        height: 35px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 43px;
+
+    }
+
+    .hero-label {
+
+        font-size: 10px;
+
+    }
+
+} 
+
+/* ==========================================
+   ABOUT RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .about-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+
+    }
+
+    .about-image {
+
+        max-width: 700px;
+
+        margin: auto;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .about {
+
+        padding: 85px 0;
+
+    }
+
+    .about-image img {
+
+        height: 450px;
+
+    }
+
+    .experience-badge {
+
+        width: 120px;
+
+        height: 120px;
+
+        right: -10px;
+
+        bottom: 20px;
+
+    }
+
+    .experience-badge strong {
+
+        font-size: 30px;
+
+    }
+
+    .about-highlights {
+
+        grid-template-columns: 1fr;
+
+    }
+
+} 
+
+/* ==========================================
+   MENU RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .menu-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .menu-section {
+
+        padding: 85px 0;
+
+    }
+
+    .menu-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .menu-image {
+
+        height: 250px;
+
+    }
+
+} 
+
+/* ==========================================
+   WHY US RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .why-header {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+    }
+
+    .why-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .why-card {
+
+        min-height: auto;
+
+    }
+
+    .cafe-stats {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        row-gap: 35px;
+
+    }
+
+    .stat-item:nth-child(2) {
+
+        border-right: none;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .why-us {
+
+        padding: 85px 0;
+
+    }
+
+    .cafe-stats {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .stat-item {
+
+        border-right: none;
+
+        padding-bottom: 25px;
+
+        border-bottom: 1px solid rgba(255,255,255,0.12);
+
+    }
+
+    .stat-item:last-child {
+
+        border-bottom: none;
+
+    }
+
+} 
+
+/* ==========================================
+   GALLERY RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .gallery-heading {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+    .gallery-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-auto-rows: 220px;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .gallery {
+
+        padding: 85px 0;
+
+    }
+
+    .gallery-grid {
+
+        grid-template-columns: 1fr;
+
+        grid-auto-rows: 280px;
+
+    }
+
+    .gallery-large {
+
+        grid-column: span 1;
+
+        grid-row: span 1;
+
+    }
+
+    .gallery-tall {
+
+        grid-row: span 1;
+
+    }
+
+    .gallery-overlay {
+
+        opacity: 1;
+
+    }
+
+} 
+
+/* ==========================================
+   TESTIMONIALS RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .testimonial-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .featured-review {
+
+        transform: none;
+
+    }
+
+    .featured-review:hover {
+
+        transform: translateY(-8px);
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .testimonials {
+
+        padding: 85px 0;
+
+    }
+
+    .testimonial-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+} 
+
+/* ==========================================
+   RESERVATION RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .reservation-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+
+    }
+
+    .reservation-content {
+
+        max-width: 700px;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .reservation {
+
+        padding: 85px 0;
+
+    }
+
+    .form-row {
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+    }
+
+    .reservation-form {
+
+        padding: 28px 20px;
+
+    }
+
+} 
+
+/* ==========================================
+   CONTACT & FOOTER RESPONSIVE
+========================================== */
+
+@media (max-width: 1000px) {
+
+    .contact-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .contact-grid .location-card:last-child {
+
+        grid-column: span 2;
+
+    }
+
+    .footer-main {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .contact {
+
+        padding: 85px 0;
+
+    }
+
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .contact-grid .location-card:last-child {
+
+        grid-column: span 1;
+
+    }
+
+    .hours div {
+
+        font-size: 10px;
+
+    }
+
+    .map-wrapper {
+
+        height: 300px;
+
+    }
+
+    .footer {
+
+        padding-top: 60px;
+
+    }
+
+    .footer-main {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+    }
+
+    .footer-bottom {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+} 
