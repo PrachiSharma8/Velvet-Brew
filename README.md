@@ -10,13 +10,12 @@ This project was built as a frontend web development portfolio project with a fo
 
 ## 🌐 Live Website
 
-Add your deployed website link here after deployment:
-
-**Live Demo:** `YOUR-LIVE-URL`
+🚀 **Live Demo:**  
+https://prachisharma8.github.io/Velvet-Brew/
 
 ---
 
-## ✨ Features
+## ✨ Features 
 
 - 🏠 Cinematic hero section
 - ☕ Premium café branding
